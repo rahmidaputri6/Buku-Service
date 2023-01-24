@@ -19,14 +19,15 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Buku implements Serializable {
+@NoArgsConstructor
+public class Buku {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long bukuId;
-    private String kodebuku;
+    private String kode;
     private String judul;
+    private String pengarang;
     private String penerbit;
-    private String tahunterbit;
+    private String tahunTerbit;
 }
